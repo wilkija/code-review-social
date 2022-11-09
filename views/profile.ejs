@@ -1,0 +1,78 @@
+<%- include('partials/header') -%>
+<div class="container mb-5 mt-5">
+    <!-- start of profile -->
+
+      <div class="container border-bottom mb-5 pb-5">
+    
+        <div class="row">
+    
+          <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="rounded-circle overflow-hidden border border-secondary profile-page-photo">
+              <img class="img-fluid" src="/imgs/default_avatar.jpg" alt="...">
+            </div>
+          </div>
+
+    
+          <div class="col-8 mt-1 row">
+            <div class="col-auto">
+              <h1 class="profile-user-name"><%= user.userName %></h1>
+            </div>
+            <div class="col-auto">
+              <%- include('partials/modal') -%>
+              <a href="/logout" class="btn btn-outline-dark">Logout</a>
+            </div>
+            <div class="col-auto">
+              <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+            </div>
+            
+            <div class="profile-stats">
+    
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item"><span class="font-weight-bold">53</span> posts</li>
+                <li class="list-group-item"><span class="font-weight-bold">217</span> followers</li>
+                <li class="list-group-item"><span class="font-weight-bold">344</span> following</li>
+              </ul>
+      
+            </div>
+
+            <div class="profile-bio mt-2">
+              <p><strong>User Name</strong>: <%= user.userName %></p>
+              <p><strong>Email</strong>: <%= user.email %></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+            </div>
+
+          </div>
+    
+        </div>
+        <!-- End of profile section -->
+    
+      </div>
+      <!-- End of container -->
+    
+    
+    <main>
+    
+      <div class="container">
+    
+        <div class="d-flex flex-wrap">
+
+          <% for(var i=0; i<posts.length; i++) {%>
+            <div class="col-4">
+              <a href="/post/<%= posts[i]._id%>">
+                <img class="img-fluid" src="<%= posts[i].image%>">
+              </a>
+            </div>
+          <% } %>
+    
+        </div>
+        <!-- End of gallery -->
+    
+        <div class="loader"></div>
+    
+      </div>
+      <!-- End of container -->
+    
+    </main>
+  </div>
+<%- include('partials/footer') -%>

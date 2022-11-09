@@ -10,7 +10,8 @@ This project exemplifies the Model-View-Controller (MVC) organization framework.
 
 Learn more here: https://developer.mozilla.org/en-US/docs/Glossary/MVC#:~:text=MVC%20
 
-![MVC Diagram](./public/imgs/readme/mvc-diagram.jpg)
+![MVC Diagram](./public/imgs/readme/mvc-diagram.jpg)  
+
 Figure 1 - Interaction within MVC Pattern
 
 Mohd Nor, Rizal & Jalaldeen, M & Razi, M.J.M. & Zakaria, Adlan & Safiuddin, Ahmad & Fakhri, Ahmad & Zulaiha, Puteri & Saat, Abdul. (2018). Cloudemy: Step into the Cloud. 
@@ -39,10 +40,12 @@ Noteworthy Dependencies:
 
 ## Sample UI
 ![Feed Preview](./public/imgs/readme/feed-preview.jpg)
-Figure 2 - Preview of Feed Page
+Figure 2 - Preview of Feed Page  
+<p>&nbsp;</p>
 
 ![Profile Preview](./public/imgs/readme/profile-preview.jpg)
-Figure 3 - Preview of Profile Page
+Figure 3 - Preview of Profile Page  
+<p>&nbsp;</p>
 
 ![Post Preview](./public/imgs/readme/post-preview.jpg)
 Figure 4 - Preview of Individual Post Page
